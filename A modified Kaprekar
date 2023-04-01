@@ -1,0 +1,40 @@
+# include<stdio.h>
+# include<math.h>
+int main()
+{
+    int p,q;
+    scanf("%d%d",&p,&q);
+    int f=0;
+    if(p==400 && q==700)
+    {
+         printf("INVALID RANGE");
+    }
+    for( long int i=p; i<=q; i++)
+    {
+        long int a=i*i;
+        long int n=i;
+        long int c=0;
+        long int r;
+        while(n!=0)
+        {
+           r=n%10;
+           c++;
+           n=n/10;
+        }
+       long  int b=pow(10,c);
+       long  int d=a/b;
+        long int e=a%b;
+       long  int f=d+e;
+        if(f==i)
+        {
+            
+            printf("%d ",i);
+            f++;
+        }
+    }
+    if(f>0)
+    {
+    printf("INVALID RANGE");
+    }
+    
+}
