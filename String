@@ -1,0 +1,22 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    string s1,s2;
+    cin>>s1>>s2;
+    cout<<s1.size()<<" ";
+    cout<<s2.size()<<endl;
+    cout<<s1+s2<<endl;
+   char a=s1[0];
+   char b=s2[0];
+   s1[0]=b;
+   s2[0]=a;
+   cout<<s1<<" "<<s2;
+    return 0;
+}
