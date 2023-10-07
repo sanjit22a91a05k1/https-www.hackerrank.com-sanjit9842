@@ -1,0 +1,32 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+class Student
+{
+    private:
+    int n;
+    string s1;
+    string s2;
+    int num; 
+    public:
+    void get()
+    {
+      cin>>n>>s1>>s2>>num;
+    }
+    void show()
+    {
+      cout<<n<<" "<<s1<<" "<<s2<<" "<<num;   
+    }
+    
+};
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    Student s;
+    s.get();
+     s.show();
+    return 0;
+}
